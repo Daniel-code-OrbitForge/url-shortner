@@ -8,7 +8,7 @@ This project allows users to submit a long URL and get back a unique short link 
 
 ## Project Structure
 
-```bash```
+```bash
 url-shortner/
 |--- server.js              # Main server file (starts Express app)
 |--- /routes
@@ -18,7 +18,7 @@ url-shortner/
 |--- /public
 |--- └── index.html         # Simple frontend page
 |--- README.md              # Project documentation
-
+```
 
 ---
 
@@ -33,18 +33,21 @@ url-shortner/
 ## Installation & Setup
 
 1. Clone the repo (or create your folder):
-```bash```
+```bash
 git clone https://github.com/Daniel-code-OrbitForge/url-shortner.git
 cd url-shortner
+```
 
 2. Install Dependencies:
-```bash```
+```bash
 npm init -y
 npm install express
+```
 
 3. Run the server
-bash
+```bash
 node server.js
+```
 
 ---
 
@@ -65,18 +68,20 @@ node server.js
 - On the first tab below the url: **params** by defualt, click on *body*, switch to **raw**
 - Add this or any url of your choice to the body:
 
-```json```
+```json
 {
   "longUrl": "https://www.google.com"
 }
+```
 
 - On the second tab, below the first tab: **HTML** by defualt, switch to **JSON**
 - Response should be:
 
-```json```
+```json
 {
   "shortUrl": "http://localhost:3000/aB3xYz"
 }
+```
 
 ## GET /:code
 - Example: http://localhost:3000/aB3xYz
